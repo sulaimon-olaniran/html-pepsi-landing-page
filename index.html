@@ -24,7 +24,8 @@
             <li><a href="products">Products</a></li>
             <li><a href="contact">Contact</a></li>
         </ul>
-        <span style="font-size:30px;cursor:pointer; margin-right: 2rem;" onclick="openNav()">&#9776;</span>
+        <span style="font-size:30px;cursor:pointer; margin-right: 2rem; color: white;"
+            onclick="openNav()">&#9776;</span>
     </nav>
 
     <!-- nav drawer links for mobile -->
@@ -56,6 +57,30 @@
         <video autoplay muted loop>
             <source src="assets/pepsi_zero_advert.mp4" type="video/mp4">
         </video>
+    </section>
+
+
+    <section class="about-section-container" id="about">
+        <h1>About Pepsi</h1>
+        <div class="about-text">
+            <p>
+                Pepsi is a carbonated soft drink manufactured by PepsiCo.
+                Originally created and developed in 1893 by Caleb Bradham
+                and introduced as Brad's Drink, it was renamed as Pepsi-Cola in 1898,
+                and then shortened to Pepsi in 1961.
+            </p>
+
+            <p>
+                Pepsi derives from the Greek word for “digestion,” as it was introduced
+                by a pharmacist looking to create a drink that helped ease an upset
+                stomach and aide in digestion. It began as Pepsi and then was changed to Pepsi-Cola.
+            </p>
+
+        </div>
+
+        <div class="about-bottom-image-container">
+
+        </div>
     </section>
 
 
@@ -200,25 +225,47 @@
 
     <section class="social-medias-container" id="socials">
         <h1>FOLLOW OUR SOCIALS</h1>
+        <div class="each-socials-container">
 
-        <div class="each-social-media">
-            <img src="assets/first_advert.jpg" alt="">
-            <i class="fa fa-instagram social-icon" style="font-size:48px;color:white"></i>
-        </div>
+            <div class="each-social-media">
+                <div class="content-overlay"></div>
+                <img src="assets/first_advert.jpg" alt="">
+                <i class="fa fa-instagram social-icon" style="font-size:48px;color:white"></i>
+                <div class="content-details fadeIn-top">
+                    <i class="fa fa-instagram social-icon" style="font-size:78px;color:white"></i>
+                    <h3>INSTAGRAM</h3>
+                </div>
+            </div>
 
-        <div class="each-social-media">
-            <img src="assets/second_advert.jpg" alt="">
-            <i class="fa fa-twitter social-icon" style="font-size:48px;color:white"></i>
-        </div>
+            <div class="each-social-media">
+                <div class="content-overlay"></div>
+                <img src="assets/second_advert.jpg" alt="">
+                <i class="fa fa-twitter social-icon" style="font-size:48px;color:white"></i>
+                <div class="content-details fadeIn-top">
+                    <i class="fa fa-twitter social-icon" style="font-size:78px;color:white"></i>
+                    <h3>TWITTER</h3>
+                </div>
+            </div>
 
-        <div class="each-social-media">
-            <img src="assets/third_advert.jpg" alt="">
-            <i class="fa fa-facebook social-icon" style="font-size:50px;color:white"></i>
-        </div>
+            <div class="each-social-media">
+                <div class="content-overlay"></div>
+                <img src="assets/third_advert.jpg" alt="">
+                <i class="fa fa-facebook social-icon" style="font-size:50px;color:white"></i>
+                <div class="content-details fadeIn-top">
+                    <i class="fa fa-facebook social-icon" style="font-size:78px;color:white"></i>
+                    <h3>FACEBOOK</h3>
+                </div>
+            </div>
 
-        <div class="each-social-media">
-            <img src="assets/forth_advert.png" alt="">
-            <i class="fa fa-youtube social-icon" style="font-size:48px;color:white"></i>
+            <div class="each-social-media">
+                <div class="content-overlay"></div>
+                <img src="assets/forth_advert.png" alt="">
+                <i class="fa fa-youtube social-icon" style="font-size:48px;color:white"></i>
+                <div class="content-details fadeIn-top">
+                    <i class="fa fa-youtube social-icon" style="font-size:78px;color:white"></i>
+                    <h3>YOUTUBE</h3>
+                </div>
+            </div>
         </div>
 
     </section>
