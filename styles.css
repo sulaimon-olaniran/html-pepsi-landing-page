@@ -13,10 +13,12 @@ nav{
     width: 100%;
     height: 10vh;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: blue;
+    background-color: #005CB4;
     z-index: 2;
 }
 
@@ -36,11 +38,64 @@ a{
     background: white;
 }
 
+.nav-logo{
+    margin-left: 1.5rem;
+}
+
 .logo-image-container img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    font-size: 3rem;
+    font-weight: 700;
+    color:#C9002B ;
+    padding-right: 1rem;
+} 
+
+.sidenav span{
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.desktop-nav{
+    display: none;
+}
+
+
+
+
 
 .homepage{
     margin-top: 10vh;
@@ -69,21 +124,31 @@ video{
     width: 100%;
     min-height: 90vh;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: lavenderblush;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border-bottom-left-radius: 120px;
     border-bottom-right-radius: 120px;
     padding-bottom: 20px;
+    padding-top: 15px;
+}
+
+.product-section h1{
+    color:#004B93;
+    font-weight: 600;
 }
 
 .products-introduction{
-    height: 40rem;
+    height: 35rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .products-introduction-image{
-    width: 100%;
-    height: 20rem;
+    width: 90%;
+    height: 15rem;
 }
 
 .products-introduction-image img{
@@ -97,12 +162,26 @@ video{
     padding: 10px;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    height: 10rem;
 }
 
 .products-introduction-text h1 {
     font-size: 2rem;
     font-weight: 900;
+    padding: 10px 0;
+}
+
+.each-products-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: lightgray;
+    padding: 20px 0;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
 }
 
 .each-product{
@@ -124,3 +203,148 @@ video{
     height: 100%;
     object-fit: contain;
 }
+
+
+/* start of social media styling */
+
+.social-medias-container{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.social-medias-container h1{
+    color: #004B93;
+    margin: 3rem 0;
+}
+
+.each-social-media{
+    width: 90%;
+    height: 25rem;
+    position: relative;
+}
+
+.each-social-media img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.social-icon{
+    z-index: 1;
+    position: absolute;
+    left: 10%;
+    bottom: 3%;
+}
+
+/* end of social media styling */
+
+
+
+
+.contact-form-container{
+    width: 100%;
+    min-height: 30rem;
+    background-color: #005CB4;
+    background-image: url('assets/contact_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+}
+
+.contact-form-container h1{
+    color: white;
+}
+
+form{
+   width: 80%;
+   height: 25rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+   background-color: rgba(0,0,0,0.5);
+}
+
+
+form span{
+    display: flex;
+    flex-direction: column;
+}
+
+form span textarea{
+    background-color: lightblue;
+}
+
+form button{
+    border: none;
+    background: none;
+    outline: none;
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid saddlebrown;
+    color: white;
+    font-size: 1rem;
+    background-color: #005CB4;
+}
+
+input{
+    border: none;
+    background: none;
+    border-bottom: 3px solid white;
+    outline: none;
+}
+
+label{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+footer{
+    width: 100%;
+    min-height: 30em;
+    background-color: #005CB4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 25px;
+}
+
+.footer-links-container {
+   width: 100%;
+   height: 15rem;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+}
+
+.footer-links-container a{
+   width: 100%;
+   color: white;
+   text-align: center;
+}
+
+.footer-social-links{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* 
+#C9002B
+#004B93 */
