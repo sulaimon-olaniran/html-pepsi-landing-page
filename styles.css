@@ -113,13 +113,31 @@ a{
 
 .homepage{
     margin-top: 10vh;
+    background: url('assets/pepsi_home_background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.second-advert{
+    background: url('assets/pepsi_home.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
 }
 
 .video-advert{
     width: 100%;
     min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
     position: relative;
+}
+
+.video-advert h1{
+    color: white;
 }
 
 .video-advert video{
