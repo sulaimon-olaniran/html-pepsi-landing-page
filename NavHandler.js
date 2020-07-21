@@ -26,7 +26,7 @@ $('#about-link').on('click', function(){
 })
 
 $('#products-link').on('click', function(){
-    const products = $('products').position().top
+    const products = $('#products').position().top
 
     $('html, body').animate({
         scrollTop : products
